@@ -84,3 +84,9 @@ Windower4/addons/GearSwap/data/
 ## 更新履歴
 
 * v1.0: 公開。DistancePlus は、遠隔武器が変わったときだけコマンドを送る
+
+## 不具合・動作報告 / Feedback
+
+「動きました」の一言だけでも歓迎です。GitHub のアカウントがあれば、[Issues](../../issues/new/choose) から書き込めます (日本語・英語どちらでも)。
+
+A one-line "it works" is welcome too. With a GitHub account you can post from [Issues](../../issues/new/choose) (Japanese or English).
