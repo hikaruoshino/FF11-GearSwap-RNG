@@ -1,4 +1,4 @@
-# FF11-GearSwap-RNG (v1.0)
+# FF11-GearSwap-RNG (v1.0.1)
 
 FF11 狩人 (Ranger) 用の GearSwap ジョブファイルです。ホバーショットの移動判定、高価な矢弾の入れ替え、DistancePlus の自動切り替えをします。日本語クライアント用です。英語クライアント用は [FF11-GearSwap-RNG-EN](https://github.com/hikaruoshino/FF11-GearSwap-RNG-EN) にあります。
 
@@ -83,6 +83,7 @@ Windower4/addons/GearSwap/data/
 
 ## 更新履歴
 
+* v1.0.1: 遠隔攻撃のたびに全アイテムから遠隔武器を探していたのを、名前ごとに結果を覚えて 2 回目からは探さないようにした (動きは同じで、処理が軽くなるだけ)
 * v1.0: 公開。DistancePlus は、遠隔武器が変わったときだけコマンドを送る
 
 ## 不具合・動作報告 / Feedback

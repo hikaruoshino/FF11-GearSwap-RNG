@@ -47,10 +47,20 @@ function job_setup()
     state.RangeWeapons = M{'アナイアレイター','フォーマルハウト','ガーンデーヴァ','アルマゲドン','スパロウホーク'}
 end
 
+-- 遠隔攻撃のたびに全アイテム (数万件) を端から調べないよう、見つけた結果は名前ごとに覚える
+-- (見つからなかった名前も覚える。装備を替えたときは別の名前になるだけなので、古い結果が間違うことはない)
+local item_id_cache = {}
 function get_item_id_by_name(name)
+    if name == nil then return nil end
+    local cached = item_id_cache[name]
+    if cached ~= nil then return cached or nil end
     for id, item in pairs(res.items) do
-        if item and item.name == name then return id end
+        if item and item.name == name then
+            item_id_cache[name] = id
+            return id
+        end
     end
+    item_id_cache[name] = false
     return nil
 end
 
